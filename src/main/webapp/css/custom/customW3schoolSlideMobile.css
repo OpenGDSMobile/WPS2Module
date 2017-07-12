@@ -1,0 +1,110 @@
+/* The side alrgorithmMenu */
+.alrgorithmMenu {
+    height: 100%; /* 100% Full-height */
+    width: 0%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 5%; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.alrgorithmMenu a {
+    padding: 2% 1% 1% 6%;
+    text-decoration: none;
+    font-size: 25px;
+    color: #95E0C8;
+    display: block;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.alrgorithmMenu x {
+    padding: 2% 1% 1% 6%;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+/* When you mouse over the navigation links, change their color */
+.alrgorithmMenu a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.alrgorithmMenu .closebtn {
+    position: absolute;
+    top: 7.5%;
+    right: 1%;
+    font-size: 36px;
+    margin-left: 1%;
+}
+
+/* The side processStatus menu */
+.processStatus {
+    height: 100%; /* 100% Full-height */
+    width: 0%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0%;
+    right: 0%;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 5%; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.processStatus a {
+    padding: 2% 1% 1% 6%;
+    text-decoration: none;
+    font-size: 25px;
+    color: #95E0C8;
+    display: block;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.processStatus x {
+    padding: 2% 1% 1% 6%;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+/* When you mouse over the navigation links, change their color */
+.processStatus a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.processStatus .closebtn {
+    position: absolute;
+    top: 7.5%;
+    right: 1%;
+    font-size: 36px;
+    margin-left: 1%;
+}
+
+.processStatus .status {
+	padding: 0% 0% 0% 70%;
+	font-weight: bold;
+}
+
+@media all and (min-width:768px) and (max-width:1024px){
+  .alrgorithmMenu {padding-top: 7%;}
+  .alrgorithmMenu a {font-size: 18px;}
+  .processStatus {padding-top: 7%;}
+  .processStatus a {font-size: 18px;}
+  h1{font-size: 24px}
+}

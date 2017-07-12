@@ -1,0 +1,259 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 15; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-body li {
+	cursor: pointer;
+	font-size : 24px;
+	border-bottom: 2px solid #000000;
+	list-style: none;
+}
+
+/* The Modal (background) */
+.param-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 15; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.param-modal-content {
+	position: fixed;
+	top : 20%;
+	left : 20%;
+	width: 50%;
+	height: 60%;
+	border-radius: 10px;
+	background-color : #ffffff;
+}
+
+.param-modal-header {
+	position: absolute;
+	top : 0%;
+	left : 0%;
+	width: 100%;
+	height: 10%;
+	border-radius: 10px 10px 0px 0px;
+	background-color : #5cb85c;
+}
+
+.param-modal-body {
+	position: absolute;
+	top : 10%;
+	left : 0%;
+	width: 100%;
+	height: 80%;
+	overflow: auto;
+}
+
+.param-modal-body-1 {
+	position: absolute;
+	top : 0%;
+	left : 1%;
+	width: 50%;
+	height: 100%;
+}
+
+.param-modal-body-2 {
+	position: absolute;
+	top : 0%;
+	left : 50%;
+	width: 50%;
+	height: 100%;
+}
+
+.param-modal-footer {
+	position: absolute;
+	top : 90%;
+	left : 0%;
+	width: 100%;
+	height: 100%;
+}
+
+.execute-button-div {
+	position: absolute;
+	top : 0%;
+	left : 40%;
+	padding-left: 10px; 	
+}
+
+.cancel-button-div {
+	position: absolute;
+	top : 0%;
+	left : 80%;
+}
+
+.test-button-div {
+	position: absolute;
+	top : 20%;
+	left : 80%;
+}
+
+.execute-button {
+	background-color:#5cb85c;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:10px 31px;
+	text-decoration:none;
+}
+.execute-button:hover {
+	background-color:#5cbf2a;
+}
+.execute-button:active {
+	position:relative;
+	top:1px;
+}
+
+.cancel-button {
+	background-color:#c74545;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:10px 31px;
+	text-decoration:none;
+}
+.cancel-button:hover {
+	background-color:#bd2a2a;
+}
+.cancel-button:active {
+	position:relative;
+	top:1px;
+}
+
+.test-button {
+	background-color:#c74545;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:10px 31px;
+	text-decoration:none;
+}
+.test-button:hover {
+	background-color:#bd2a2a;
+}
+.test-button:active {
+	position:relative;
+	top:1px;
+}
+
+.header {
+	position: absolute;
+	color : white;	
+	vertical-align : middle;
+	font-size : 30px;
+	font-weight: bold;
+	padding-top : 8px;
+	padding-left : 10px;
+}
+
+.param-modal-close {
+    color: white;
+    float: right;
+    padding-right: 14px;
+    padding-top: 8px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.param-modal-close:hover,
+.param-modal-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}

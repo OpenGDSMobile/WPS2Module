@@ -1,0 +1,50 @@
+body{
+    font-family: "Lato", sans-serif;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+	top : 0%;
+	left : 0%;
+	position: absolute;
+}
+
+#upper_button {
+	width: 100%;
+	height: 10%;
+	top : 0%;
+	left : 0%;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0px 0px 4px 0px;
+	z-index : 10;
+	position: absolute;
+}
+
+
+#algorithm_select_button {
+	width: 50%;
+	height: 100%;
+	top : 0%;
+	left : 0%;
+    padding: 0% 0% 0% 1%;
+	color : white;
+	text-align:left;
+	background-color: #00BFFF;
+	position: absolute;
+    cursor:pointer;
+}
+
+#process_status_button {
+	width: 49%;
+	height: 100%;
+	top : 0%;
+	left : 50%;
+   	color : white;
+   	text-align:right;
+ 	padding: 0% 1% 0% 0%;
+	background-color: #8FCEFF;
+	position: absolute;
+    cursor:pointer;
+}
